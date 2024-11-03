@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MYCV</title>
-<link rel="stylesheet" type="text/css" href="cvstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYCV</title>
+    <link rel="stylesheet" type="text/css" href="cvstyle.css">
+    
 </head>
+
 <body>
     <div class="container">
         <div class="top">
@@ -21,23 +24,29 @@
             <div class="leftSide">
                 <h3>Contact Info</h3>
                 <ul>
-                    <li>
+                    <li onclick="copyToClipboard('elfadiliyacine@gmail.com', this)">
                         <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                        <span class="text">elfadiliyacine@gmail.com</span>
+                        <span class="thetext" data-copy="elfadiliyacine@gmail.com">elfadiliyacine@gmail.com</span>
                     </li>
-                    <li>
+                    <li onclick="copyToClipboard('+212 6 50 32 92 24', this)">
                         <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
-                        <span class="text">+212 6 50 32 92 24</span>
+                        <span class="thetext" data-copy="+212 6 50 32 92 24">+212 6 50 32 92 24</span>
                     </li>
-                    <li>
+                    <li onclick="copyToClipboard('myWebsite/(not/ready/yet)', this)">
                         <span class="icon"><ion-icon name="globe-outline"></ion-icon></span>
-                        <span class="text">https://readnoveles.github.io</span>
+                        <span class="thetext"
+                            data-copy="https://myWebsite/(not/ready/yet)">https://myWebsite/(not/ready/yet)</span>
                     </li>
-                    <li>
+                    <li onclick="copyToClipboard('Rue Oulad Teima, Casablanca, Morocco', this)">
                         <span class="icon"><ion-icon name="location-outline"></ion-icon></span>
-                        <span class="text">Rue Oulad Teima,Casablanca,Morocco</span>
+                        <span class="thetext" data-copy="Rue Oulad Teima, Casablanca, Morocco">Rue Oulad Teima,
+                            Casablanca,
+                            Morocco</span>
                     </li>
                 </ul>
+
+
+
                 <h3>Education</h3>
                 <ul class="education">
                     <li>
@@ -79,16 +88,25 @@
                 </ul>
                 <h3>links</h3>
                 <ul class="links">
-                    <li><a href="https://github.com/Yacine20elfadili"><span class="icon"><ion-icon name="logo-github"></ion-icon></span>Github</a></li>
-                    <li><a href="https://www.instagram.com/MyAccount/"><span class="icon"><ion-icon name="logo-instagram"></ion-icon></span>Instagram</a></li>
-                    <li><a href="http://www.fpt.ac.ma/"><span class="icon"><ion-icon name="school-outline"></ion-icon></span>L'université</a></li>
-                    <li><a href="https://www.facebook.com/"><span class="icon"><ion-icon name="logo-facebook"></ion-icon></span>Facebook</a></li>
+                    <li><a href="https://github.com/Yacine20elfadili" target="_blank"><span class="icon"><ion-icon
+                                    name="logo-github"></ion-icon></span>Github</a></li>
+                    <li><a href="https://www.instagram.com/yacine5fadili/" target="_blank"><span class="icon"><ion-icon
+                                    name="logo-instagram"></ion-icon></span>Instagram</a></li>
+                    <li><a href="http://www.fpt.ac.ma/" target="_blank"><span class="icon"><ion-icon
+                                    name="school-outline"></ion-icon></span>L'université</a></li>
+                    <li><a href="https://www.linkedin.com/in/mohamed-yacine-elfadili-a5185b314/" target="_blank"><span
+                                class="icon"><ion-icon name="logo-facebook"></ion-icon></span>Facebook</a></li>
                 </ul>
             </div>
             <div class="rightSide">
                 <div class="about">
                     <h3>À PROPOS</h3>
-                    <p>Je m'appelle Mohamed Yacine Elfadili, un étudiant engagé en Génie Informatique à la Faculté Polydisciplinaire de Taroudant. Actuellement en phase d'exploration professionnelle, je m'attache à acquérir une connaissance approfondie et à rester au fait des évolutions technologiques.<br><br> Par ailleurs, j'ai une expérience dans le travail avec HTML, CSS et JavaScript. Récemment, j'ai consacré beaucoup de temps à la pratique de Python et j'ai réalisé plusieurs projets dans ce langage.</p>
+                    <p>Je m'appelle Mohamed Yacine Elfadili, un étudiant engagé en Génie Informatique à la Faculté
+                        Polydisciplinaire de Taroudant. Actuellement en phase d'exploration professionnelle, je
+                        m'attache à acquérir une connaissance approfondie et à rester au fait des évolutions
+                        technologiques.<br><br> Par ailleurs, j'ai une expérience dans le travail avec HTML, CSS et
+                        JavaScript. Récemment, j'ai consacré beaucoup de temps à la pratique de Python et j'ai réalisé
+                        plusieurs projets dans ce langage.</p>
                 </div>
                 <div class="about">
                     <h3>Project</h3>
@@ -97,8 +115,10 @@
                             <h5>2024/4/27</h5>
                         </div>
                         <div class="text">
-                            <h4><a href="https://yacine20elfadili.github.io/readnoveles/abcd/Login">readnoveles</a></h4>
-                            <p>'readnoveles' est un site Web qui vous permet de lire des romans. Dans la page de connexion, saisissez le nom d'utilisateur "medyacine" et "2005" comme mot de passe.
+                            <h4><a href="https://yacine20elfadili.github.io/readnoveles/abcd/Login"
+                                    target="_blank">readnoveles</a></h4>
+                            <p>'readnoveles' est un site Web qui vous permet de lire des romans. Dans la page de
+                                connexion, saisissez le nom d'utilisateur "medyacine" et "2005" comme mot de passe.
                                 codé avec html, css et javascript.</p>
                         </div>
                     </div>
@@ -107,8 +127,10 @@
                             <h5>2024/5/5</h5>
                         </div>
                         <div class="text">
-                            <h4><a href="https://yacine20elfadili.github.io/mycv/cvindex.html">My CV</a></h4>
-                            <p>'Mon-CV' est un site Web qui contient toutes mes informations telles que mon nom, mon parcours éducatif, mes compétences, mes coordonnées et à propos de moi.
+                            <h4><a href="https://yacine20elfadili.github.io/mycv/cvindex.html" target="_blank">My CV</a>
+                            </h4>
+                            <p>'Mon-CV' est un site Web qui contient toutes mes informations telles que mon nom, mon
+                                parcours éducatif, mes compétences, mes coordonnées et à propos de moi.
                                 codé avec html, css et javascript.</p>
                         </div>
                     </div>
@@ -130,20 +152,40 @@
                     <div class="box">
                         <h4>JavaScript</h4>
                         <span class="percent">
-                            <div style="width: 35%;"></div>
+                            <div style="width: 65%;"></div>
                         </span>
                     </div>
                     <div class="box">
                         <h4>Python</h4>
                         <span class="percent">
-                            <div style="width: 70%;"></div>
+                            <div style="width: 80%;"></div>
                         </span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        function copyToClipboard(text, element) {
+            navigator.clipboard.writeText(text).then(() => {
+                // Add the copied class to apply color effect
+                const textSpan = element.querySelector('.thetext');
+                textSpan.classList.add('copied');
+        
+                // Remove the effect after 500ms
+                setTimeout(() => {
+                    textSpan.classList.remove('copied');
+                }, 2500);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        }
+    </script>
+    
+
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
