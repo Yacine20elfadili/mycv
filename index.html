@@ -171,18 +171,36 @@
                 // Add the copied class to apply color effect
                 const textSpan = element.querySelector('.thetext');
                 textSpan.classList.add('copied');
+                
+                // Show tooltip
+                const tooltip = element.querySelector('.tooltiptext');
+                tooltip.style.visibility = 'visible';
+                tooltip.style.opacity = '1';
         
-                // Remove the effect after 500ms
+                // Remove the effect after 2.5s
                 setTimeout(() => {
                     textSpan.classList.remove('copied');
+                    tooltip.style.visibility = 'hidden';
+                    tooltip.style.opacity = '0';
                 }, 2500);
             }).catch(err => {
                 console.error('Failed to copy text: ', err);
             });
         }
+        
+        // Animate skill bars on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add animation to skill bars
+            const skillBars = document.querySelectorAll('.percent div');
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 300);
+            });
+        });
     </script>
-    
-
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
